@@ -282,6 +282,115 @@ ALTER TABLE `pagos`
   ADD CONSTRAINT `pagos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+--consulta
+INSERT INTO armas (
+    nombre,
+    marca,
+    categoria,
+    mecanismo_disparo,
+    descripcion,
+    precio,
+    stock,
+    imagen
+)
+VALUES
+(
+    'Beretta M9',
+    'Beretta',
+    'Pistola',
+    'Semiautomatica',
+    'Pistola militar italiana calibre 9mm',
+    1350.00,
+    12,
+    'beretta_m9.jpg'
+),
+(
+    'Colt M1911',
+    'Colt',
+    'Pistola',
+    'Semiautomatica',
+    'Pistola clasica calibre .45',
+    1500.00,
+    8,
+    'colt_1911.jpg'
+),
+(
+    'M4A1',
+    'Colt',
+    'Rifle',
+    'Automatica',
+    'Rifle de asalto militar',
+    3200.00,
+    4,
+    'm4a1.jpg'
+),
+(
+    'FN SCAR',
+    'FN Herstal',
+    'Rifle',
+    'Semiautomatica',
+    'Rifle tactico moderno',
+    4100.00,
+    3,
+    'scar.jpg'
+),
+(
+    'MP5',
+    'Heckler & Koch',
+    'Subfusil',
+    'Automatica',
+    'Subfusil compacto aleman',
+    2900.00,
+    6,
+    'mp5.jpg'
+),
+(
+    'Uzi',
+    'IMI',
+    'Subfusil',
+    'Automatica',
+    'Subfusil israeli',
+    2600.00,
+    5,
+    'uzi.jpg'
+),
+(
+    'M249',
+    'FN Herstal',
+    'Ametralladora',
+    'Automatica',
+    'Ametralladora ligera militar',
+    6800.00,
+    2,
+    'm249.jpg'
+),
+(
+    'PKM',
+    'Kalashnikov',
+    'Ametralladora',
+    'Automatica',
+    'Ametralladora media sovietica',
+    7200.00,
+    2,
+    'pkm.jpg'
+),
+(
+    'Mossberg 500',
+    'Mossberg',
+    'Escopeta',
+    'Manual',
+    'Escopeta de corredera',
+    1900.00,
+    9,
+    'mossberg500.jpg'
+),
+(
+    'SPAS-12',
+    'Franchi',
+    'Escopeta',
+    'Semiautomatica',
+    'Escopeta tactica italiana',
+    3400.00,
+    3,
+    'spas12.jpg'
+);
